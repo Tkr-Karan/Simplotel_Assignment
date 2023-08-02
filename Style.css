@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1000px;
+  overflow-x: hidden;
+}
+
+.my-nav {
+  /* background-color: gray; */
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+
+.nav-list {
+  width: 90%;
+  margin-left: 15%;
+  cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-image {
+  width: 10%;
+  display: flex;
+  cursor: pointer;
+}
+
+.phone {
+  margin-right: 1rem;
+}
+
+.listData {
+  list-style: none;
+}
+
+.food-poster {
+  position: relative;
+}
+
+.main-content {
+  height: 200%;
+  /* background: rgb(173, 58, 180);
+  background: linear-gradient(
+    60deg,
+    rgba(173, 58, 180, 0.6362920168067228) 0%,
+    rgba(252, 179, 69, 0.6250875350140056) 63%,
+    rgba(253, 239, 29, 0.7315301120448179) 100%
+  ); */
+  background: rgb(244, 82, 238);
+  background: linear-gradient(
+    110deg,
+    rgba(244, 82, 182, 0.746) 30%,
+    rgba(210, 125, 27, 0.509) 74%,
+    rgba(255, 255, 0, 0.665) 100%
+  );
+}
+
+.main-image img {
+  width: 100vw;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main-detail {
+  height: 12rem;
+  padding: 10px;
+  width: 25%;
+  color: rgb(255, 250, 250);
+  background-color: rgba(227, 99, 193, 0.509);
+  top: 30%;
+  left: 10%;
+  word-spacing: 5px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.image-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.order-content {
+  height: 95vh;
+}
+
+.order-now {
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.order-data {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.food-data {
+  width: 280px;
+  height: 380px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.food-data img {
+  height: 250px;
+  width: 250px;
+  border-top-right-radius: 50px;
+}
+
+.food-name {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.food-desc {
+  width: 250px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.order-confirm {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.confirm {
+  width: 10rem;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: rgba(35, 33, 33, 0.137);
+  border-style: none;
+}
+
+.food-detail {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 1280px) {
+  .my-nav {
+    height: 4rem;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-image {
+    display: flex;
+  }
+
+  .main-image {
+    position: relative;
+  }
+
+  .main-image img {
+    height: 40vh;
+  }
+
+  .listData {
+    margin: 2px;
+  }
+
+  .main-detail {
+    height: 12rem;
+    padding: 10px;
+    width: 50%;
+    color: rgb(255, 250, 250);
+    background-color: rgba(227, 99, 193, 0.509);
+    top: 30%;
+    left: 10%;
+    word-spacing: 5px;
+    position: absolute;
+  }
+
+  .description {
+    width: 80%;
+  }
+
+  .order-data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .food-data {
+    margin: 10px;
+  }
+
+  .nav-list {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-detail {
+    height: 10rem;
+    padding: 10px;
+    width: 65%;
+    color: rgb(255, 250, 250);
+    background-color: rgba(227, 99, 193, 0.509);
+    top: 30%;
+    left: 10%;
+    word-spacing: 5px;
+    position: absolute;
+  }
+
+  .main-image img {
+    height: 40vh;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  
+}
