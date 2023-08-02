@@ -171,6 +171,7 @@ body {
   letter-spacing: 2px;
   background-color: rgba(35, 33, 33, 0.137);
   border-style: none;
+  color: black;
 }
 
 .food-detail {
@@ -200,7 +201,7 @@ body {
   }
 
   .main-image img {
-    height: 40vh;
+    height: 70vh;
   }
 
   .listData {
@@ -256,7 +257,7 @@ body {
   }
 
   .main-image img {
-    height: 40vh;
+    height: 60vh;
   }
 
   .heading {
@@ -267,6 +268,4 @@ body {
     width: 100%;
     font-size: 1rem;
   }
-
-  
 }
